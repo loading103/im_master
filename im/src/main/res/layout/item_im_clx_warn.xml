@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_f5f5f5"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/im_chat_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="4dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="4dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/im_shape_im_time_bg"
+        android:textColor="@color/white"
+        android:textSize="13dp" />
+    <LinearLayout
+        android:id="@+id/ll_im_container"
+        android:layout_width="match_parent"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/im_shape_im_commom_bg_cor4"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/im_tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="@color/color_333333"
+            android:textSize="16dp"
+            android:layout_marginTop="10dp"
+            android:text="账号警告通知"/>
+        <TextView
+            android:id="@+id/im_tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="你的彩乐讯账号因涉嫌违规操作，现对你严重警
+告，如有疑问请联系相关客服人员！"
+            android:textColor="@color/color_333333"
+            android:textSize="14dp"
+            android:layout_marginTop="10dp" />
+        <TextView
+            android:id="@+id/im_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:30"
+            android:textColor="@color/color_333333"
+            android:layout_gravity="end"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="1dp"
+            android:textSize="13dp" />
+
+    </LinearLayout>
+</LinearLayout>

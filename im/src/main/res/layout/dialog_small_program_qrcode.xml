@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/white"
+        app:bl_corners_radius="4dp"
+        app:bl_solid_color="@color/white"
+        tools:ignore="MissingPrefix">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:id="@+id/iv_head"
+                android:src="@mipmap/mine_chong" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_title"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="英雄联盟"
+                android:textColor="@color/color_333333"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:id="@+id/iv_content"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="彩乐讯扫一扫，使用小程序"
+            android:textSize="12sp"
+            android:textColor="@color/color_666666"
+            android:layout_below="@+id/iv_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:drawableLeft="@mipmap/small_icon"
+            android:drawablePadding="3dp"
+            android:gravity="center_vertical"/>
+    </RelativeLayout>
+</LinearLayout>

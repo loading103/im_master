@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:paddingBottom="15dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:orientation="vertical">
+        <com.shehuan.niv.NiceImageView
+            android:id="@+id/item_head"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:padding="1dp"
+            android:scaleType="fitXY"
+            app:border_color="@color/color_0BD2CF"
+            app:border_width="1dp"
+            app:is_circle="false"
+            app:corner_radius="5dp"/>
+<!--        <ImageView-->
+<!--            android:id="@+id/item_head"-->
+<!--            android:layout_width="53dp"-->
+<!--            android:layout_height="53dp" />-->
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="张三"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="#333333"
+            android:textSize="13dp" />
+    </LinearLayout>
+</LinearLayout>

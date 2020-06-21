@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mcxtzhang.swipemenulib.SwipeMenuLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:clickable="true"
+    android:id="@+id/ll_im_container"
+    android:paddingBottom="1dp">
+    <LinearLayout
+        android:id="@+id/im_container"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="70dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="69.5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:id="@+id/im_iv_choosed"
+                android:layout_width="45dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/im_conversation_chooed"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="45dp"
+                android:layout_marginLeft="18dp"
+                android:layout_height="45dp">
+                <!--头像-->
+                <ImageView
+                    android:id="@+id/im_iv_head"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:scaleType="fitXY"
+                    android:layout_centerInParent="true" />
+                <ImageView
+                    android:id="@+id/iv_has_message"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:visibility="gone"
+                    android:background="@drawable/im_shape_red_dot"
+                    android:layout_alignParentRight="true" />
+                <ImageView
+                    android:id="@+id/iv_iv_state"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:visibility="gone"
+                    android:background="@mipmap/im_chat_offline"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="18dp"
+                android:paddingRight="18dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+                    <!--昵称或群名-->
+                    <TextView
+                        android:id="@+id/im_tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:layout_centerVertical="true"
+                        android:maxLines="1"
+                        android:textColor="@color/black_333333"
+                        android:textSize="15dp" />
+                    <ImageView
+                        android:id="@+id/im_iv_leve"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:src="@mipmap/im_group_logo"
+                        android:layout_toRightOf="@+id/im_tv_name" />
+                    <ImageView
+                        android:id="@+id/iv_no_notice"
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone"
+                        android:layout_toRightOf="@+id/im_iv_leve"
+                        android:src="@mipmap/im_chat_no_notice"/>
+                    <TextView
+                        android:id="@+id/im_tv_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:layout_centerVertical="true"
+                        android:text="10:30"
+                        android:textColor="@color/gray_909090"
+                        android:layout_alignParentRight="true"
+                        android:textSize="13dp" />
+                    <ImageView
+                        android:id="@+id/im_iv_readed"
+                        android:layout_height="17dp"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_toLeftOf="@+id/im_tv_time"
+                        android:layout_marginLeft="10dp"
+                        android:src="@mipmap/chat_cg"
+                        android:layout_marginRight="7.5dp" />
+                </RelativeLayout>
+
+                <!--消息-->
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/im_tv_state"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="发送失败"
+                            android:textColor="@color/red7"
+                            android:textSize="14dp"
+                            android:visibility="gone" />
+                        <TextView
+                            android:id="@+id/im_tv_at"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="@color/red6"
+                            android:visibility="gone"
+                            android:textSize="12dp"
+                            android:layout_marginRight="6dp"
+                            android:text="@string/im_has_at"
+                            />
+                        <ImageView
+                            android:id="@+id/im_iv_state"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:visibility="gone"
+                            android:layout_marginRight="5dp"
+                            android:src="@mipmap/im_chat_send_state"
+                            />
+
+                        <TextView
+                            android:id="@+id/im_tv_content"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:ellipsize="marquee"
+                            android:singleLine="true"
+                            android:textColor="@color/gray_9B9B9B"
+                            android:textSize="13dp"
+                            android:layout_marginRight="12dp" />
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:id="@+id/im_tv_unread"
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="5dp"
+                                android:textColor="@color/white"
+                                android:layout_marginLeft="10dp"
+                                android:textSize="11dp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="60dp"
+            android:background="#ddd"/>
+    </LinearLayout>
+
+
+    <!-- 以下都是侧滑菜单的内容依序排列 -->
+    <com.android.im.imview.IMDrawableCenterTextView
+        android:id="@+id/btnTop"
+        android:layout_width="74dp"
+        android:layout_height="match_parent"
+        android:background="@color/color_0BD2CF"
+        android:drawableTop="@mipmap/im_item_top"
+        android:text="置顶"
+        android:drawablePadding="5dp"
+        android:gravity="center_horizontal"
+        android:textSize="12dp"
+        android:textColor="@color/white"/>
+
+    <com.android.im.imview.IMDrawableCenterTextView
+        android:id="@+id/btnUnRead"
+        android:layout_width="74dp"
+        android:layout_height="match_parent"
+        android:background="#F9DB62"
+        android:clickable="true"
+        android:drawableTop="@mipmap/im_item_notice"
+        android:text="关闭通知"
+        android:textSize="12dp"
+        android:drawablePadding="5dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"/>
+    <com.android.im.imview.IMDrawableCenterTextView
+        android:id="@+id/btnDelete"
+        android:layout_width="74dp"
+        android:layout_height="match_parent"
+        android:drawableTop="@mipmap/im_item_delte"
+        android:text="删除"
+        android:drawablePadding="5dp"
+        android:gravity="center_horizontal"
+        android:textSize="12dp"
+        android:textColor="@color/white"
+        android:background="#E22E37" />
+</com.mcxtzhang.swipemenulib.SwipeMenuLayout>

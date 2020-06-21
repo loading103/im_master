@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:layout_width="match_parent"
+        android:background="@color/color_b3b3b3"
+        android:layout_height="27dp">
+        <TextView
+            android:id="@+id/groupTv"
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:text="A"
+            android:textColor="@color/color_808080"
+            android:background="@color/color_F3F3F3"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:textSize="14dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lin2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/cb_choosed"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="18dp"
+            android:layout_gravity="center"
+            android:button="@null"
+            android:enabled="false"
+            android:background="@drawable/im_chat_contact_select"
+            android:layout_marginRight="15dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_photo"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/im_list_head_1"
+                android:layout_gravity="center_vertical" />
+            <TextView
+                android:id="@+id/tv_studentName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="数据"
+                android:layout_marginLeft="13dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="14sp"
+                android:textColor="@color/color_2B2B2B"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="15528167063"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"
+            android:textColor="#333333"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

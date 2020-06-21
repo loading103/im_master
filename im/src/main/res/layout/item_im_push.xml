@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/im_tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="4dp"
+        android:layout_gravity="center"
+        android:paddingBottom="4dp"
+        android:text="15/12 12:31"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/im_shape_push_time_bg"
+        android:textColor="@color/color_9B9B9B"
+        android:textSize="14dp" />
+    <LinearLayout
+        android:id="@+id/ll_im_container"
+        android:layout_width="match_parent"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:padding="10dp"
+        android:background="@drawable/im_shape_im_commom_bg_cor4"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/im_tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="@color/color_333333"
+            android:textSize="16dp"
+            android:layout_marginTop="10dp"
+            android:text="近日，江苏连云港一市民报警称自己价值6万元、重达3000斤的变压器被盗。经查，竟是一男子雇大吊车和货车，在高架桥上明目张胆的把变压器偷走。嫌疑人称，雇车一共花费了1000元。目前男子已被刑拘"/>
+        <ImageView
+            android:id="@+id/im_iv_head"
+            android:layout_width="match_parent"
+            android:layout_height="158dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/im_list_head_1"
+            android:scaleType="centerCrop" />
+        <TextView
+            android:id="@+id/im_tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="福利活动最新福利活动，赶紧来加入吧！"
+            android:textColor="@color/color_adadad"
+            android:textSize="16dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_marginTop="10dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_E0E0E0"
+            android:layout_marginTop="10dp"/>
+        <LinearLayout
+            android:id="@+id/iv_ll_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:paddingTop="6dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="查看详情"
+                android:textColor="@color/color_333333"
+                android:layout_gravity="center"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="11dp"
+                android:src="@mipmap/im_rt_disclosure_arrow"
+                android:scaleType="centerCrop" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

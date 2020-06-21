@@ -1,0 +1,49 @@
+apply plugin: 'com.android.library'
+
+apply plugin: 'org.greenrobot.greendao'
+
+greendao {
+    schemaVersion 1
+    daoPackage 'com.android.nettylibrary.greendao.gen'
+    targetGenDir 'src/main/java'
+}
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "29.0.0"
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/*'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/INDEX.LIST'
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation files('libs/eventbus-3.1.1.jar')
+}

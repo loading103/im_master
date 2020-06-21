@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/im_ll_no_content"
+    android:visibility="gone"
+    android:gravity="center_horizontal">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/empty_group"
+        android:layout_marginTop="150dp"/>
+    <TextView
+        android:id="@+id/im_tv_no_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="您暂时还未添加群聊~"
+        android:textSize="13sp"
+        android:textColor="@color/color_999999"
+        android:layout_marginTop="19dp"/>
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_common_title" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/color_f5f5f5">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="37.5dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:text="彩乐讯的新消息设置"
+            android:textColor="@color/color_cccccc"
+            android:textSize="14sp" />
+
+        <com.rhby.cailexun.widget.SettingsOptionView
+            android:id="@+id/sov1"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            app:is_Check="true"
+            app:left_img="@mipmap/set_msg"
+            app:text_content="新消息通知" />
+
+        <com.rhby.cailexun.widget.SettingsOptionView
+            android:id="@+id/sov2"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            app:is_Check="true"
+            app:left_img="@mipmap/set_voice"
+            app:text_content="声音提醒" />
+
+        <com.rhby.cailexun.widget.SettingsOptionView
+            android:id="@+id/sov3"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            app:is_Check="false"
+            app:left_img="@mipmap/set_ver"
+            app:text_content="震动提醒" />
+
+        <com.rhby.cailexun.widget.SettingsOptionView
+            android:id="@+id/sov4"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            app:is_Check="false"
+            app:left_img="@mipmap/set_add"
+            app:text_content="好友认证"
+            app:is_show_line="false"/>
+
+        <com.rhby.cailexun.widget.SettingsOptionView
+            android:id="@+id/sov5"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            app:is_Check="false"
+            app:left_img="@mipmap/login_pass"
+            app:text_content="修改密码"
+            app:is_show_right_arr="true"
+            android:visibility="gone"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:text="开启后，添加你为好友需要你的认证"
+            android:textColor="#ffaaaaaa"
+            android:layout_marginLeft="22dp"
+            android:gravity="center_vertical"
+            android:textSize="12dp"
+            />
+        <com.rhby.cailexun.widget.SettingsOptionView
+            android:id="@+id/sov7"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            app:is_Check="false"
+            app:left_img="@mipmap/login_phone"
+            app:text_content="更换手机号"
+            app:is_show_right_arr="true" />
+        <com.rhby.cailexun.widget.SettingsOptionView
+            android:id="@+id/sov8"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            app:is_Check="false"
+            app:left_img="@mipmap/setting_data"
+            android:visibility="gone"
+            app:text_content="数据缓存"
+            app:is_show_right_arr="true"/>
+        <com.rhby.cailexun.widget.SettingsOptionView
+            android:id="@+id/sov6"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            app:is_Check="false"
+            app:is_show_line="false"
+            android:visibility="gone"
+            app:left_img="@mipmap/set_about"
+            app:text_content="关于我们"
+            app:is_show_right_arr="true"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/btn_exit"
+            android:layout_marginTop="101dp"
+            android:text="退出登录"
+            android:textSize="15dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/im_shape_btn_red_c28"/>
+
+    </LinearLayout>
+
+</LinearLayout>

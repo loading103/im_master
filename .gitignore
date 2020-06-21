@@ -1,0 +1,5 @@
+/build
+/.gradle
+/.idea
+/MyImProtect.iml
+/local.properties

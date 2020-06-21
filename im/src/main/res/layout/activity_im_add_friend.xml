@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_f5f5f5"
+    android:orientation="vertical">
+    <include layout="@layout/layout_im_common_title"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/ll_search"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal"
+            android:background="@drawable/im_search_bg"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="10dp">
+            <ImageView
+                android:id="@+id/im_iv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"
+                android:src="@mipmap/im_conversation_serch"/>
+            <EditText
+                android:id="@+id/im_tv_serch"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="请输入手机号"
+                android:textSize="13dp"
+                android:background="@null"
+                android:singleLine="true"
+                android:textCursorDrawable="@drawable/im_shape__lin_bg"
+                android:imeOptions="actionSearch"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center|bottom"
+                android:textColor="@color/color_333333"
+                android:drawablePadding="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_f5f5f5"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            app:srlAccentColor="@color/color_05A9FE"
+            app:srlPrimaryColor="@color/color_05A9FE"
+            app:srlEnablePreviewInEditMode="true"
+            android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+        <include layout="@layout/empty_group"/>
+    </RelativeLayout>
+</LinearLayout>

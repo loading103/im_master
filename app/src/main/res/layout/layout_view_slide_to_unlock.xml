@@ -1,0 +1,43 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+   <RelativeLayout
+       android:id="@+id/rl_root"
+       android:background="@drawable/im_shape_login"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <View
+           android:id="@+id/s111"
+           android:layout_width="0.1dp"
+           android:layout_height="0.1dp"
+           android:layout_marginLeft="65dp"/>
+       <TextView
+           android:id="@+id/tv_hint"
+           android:textColor="@android:color/white"
+           android:layout_centerVertical="true"
+           android:text="向右滑动即可登录"
+           android:gravity="center"
+           android:drawableRight="@mipmap/icon_jiantou"
+           android:layout_toRightOf="@+id/s111"
+           android:drawablePadding="15dp"
+           android:textSize="15dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+       <RelativeLayout
+           android:id="@+id/rl_slide"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_marginLeft="20dp"
+           android:background="#00000000">
+           <ImageView
+               android:id="@+id/iv_slide"
+               android:scaleType="fitXY"
+               android:src="@mipmap/btn_huakuai"
+               android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:layout_centerVertical="true"/>
+       </RelativeLayout>
+   </RelativeLayout>
+</RelativeLayout>

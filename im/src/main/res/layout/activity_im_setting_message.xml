@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/im_shape_im_convestion_top_bg">
+            <include layout="@layout/layout_im_top_title_white"/>
+        </LinearLayout>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:background="@color/color_C1C1C1"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:background="@color/color_F5F6F7"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="17dp"
+                android:textColor="@color/color_9B9B9B"
+                android:text="@string/im_open_setting"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="13dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/im_ll_open_notice"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="12dp"
+                android:textColor="@color/black0"
+                android:text="@string/im_new_notice_setting"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:paddingLeft="17dp"
+                android:paddingRight="12dp"
+                android:gravity="center"
+                android:textSize="16dp"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/im_tv_open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/color_9B9B9B"
+                android:drawablePadding="5dp"
+                android:text="@string/im_open_notice"
+                android:drawableRight="@mipmap/im_rt_disclosure_arrow"
+                android:textSize="14dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:background="@color/color_F5F6F7"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="16dp"
+                android:gravity="center"
+                android:layout_marginLeft="17dp"
+                android:textColor="@color/color_9B9B9B"
+                android:text="@string/im_recieve_mesg"
+                android:textSize="13dp"/>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white"
+            android:visibility="gone"
+            android:layout_marginTop="1dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dp"
+                android:layout_centerVertical="true"
+                android:text="@string/im_setting_app_notice"
+                android:textColor="@color/black0"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/im_iv_app_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:src="@mipmap/im_chat_detail_off" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white"
+            android:layout_marginTop="1dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dp"
+                android:layout_centerVertical="true"
+                android:text="@string/im_setting_app_voice"
+                android:textColor="@color/black0"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/im_iv_app_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:src="@mipmap/im_chat_detail_off" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white"
+            android:layout_marginTop="1dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dp"
+                android:layout_centerVertical="true"
+                android:text="@string/im_setting_app_shake"
+                android:textColor="@color/black0"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/im_iv_app_shake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:src="@mipmap/im_chat_detail_off" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white"
+            android:layout_marginTop="1dp"
+            android:visibility="gone"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dp"
+                android:layout_centerVertical="true"
+                android:text="@string/im_setting_app_push"
+                android:textColor="@color/black0"
+                android:textSize="16dp" />
+            <ImageView
+                android:id="@+id/im_iv_push"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:src="@mipmap/im_chat_detail_off" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/im_tv_clear"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/im_shape_im_seting_btn"
+            android:text="@string/im_setting_app_btn"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="#fff"
+            android:layout_height="46dp" />
+    </LinearLayout>
+</LinearLayout>

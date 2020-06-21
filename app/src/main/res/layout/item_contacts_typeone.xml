@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/ll_search"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical"
+        android:background="@drawable/im_search_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="false"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <EditText
+            android:id="@+id/im_tv_serch"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="搜索用户"
+            android:textSize="13dp"
+            android:imeOptions="actionSearch"
+            android:gravity="center|start"
+            android:background="@null"
+            android:singleLine="true"
+            android:textCursorDrawable="@drawable/im_shape__lin_bg"
+            android:layout_gravity="center"
+            android:textColor="@color/color_333333"
+            android:drawableLeft="@mipmap/im_conversation_serch"
+            android:drawablePadding="10dp"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/mtv_person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="最近联系(5)"
+        android:textColor="#333333"
+        android:textSize="15dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:layout_marginTop="11dp"
+        android:background="#F3F3F3" />
+    <RelativeLayout
+        android:id="@+id/rl_new_friend"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_51"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:id="@+id/item_head"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            android:src="@mipmap/im_contact_friend" />
+
+        <TextView
+            android:id="@+id/text_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            android:layout_toRightOf="@+id/item_head"
+            android:textColor="#2B2B2B"
+            android:textSize="15dp"
+            android:text="新的朋友" />
+        <TextView
+            android:id="@+id/tv_unread_addnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/im_shape_red_dot"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            android:padding="2dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="88dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textSize="10dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dp_62"
+            android:background="#E6E6E6" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_new_group"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_51"
+        android:layout_marginBottom="5dp">
+        <ImageView
+            android:id="@+id/item_head1"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            android:src="@mipmap/im_contact_group" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            android:layout_toRightOf="@+id/item_head1"
+            android:textColor="#2B2B2B"
+            android:textSize="15dp"
+            android:text="我的群聊" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dp_62"
+            android:background="#E6E6E6" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_group"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_51"
+        android:layout_marginBottom="5dp">
+        <com.android.im.imview.IMRoundAngleImageView1
+            android:id="@+id/item_group"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            android:src="@mipmap/im_clx_grou" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            android:layout_toRightOf="@+id/item_group"
+            android:textColor="#2B2B2B"
+            android:textSize="15dp"
+            android:text="彩乐讯团队" />
+
+    </RelativeLayout>
+</LinearLayout>

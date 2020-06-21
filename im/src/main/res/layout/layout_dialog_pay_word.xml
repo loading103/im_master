@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp">
+        <RelativeLayout
+            android:id="@+id/im_rl_cancle"
+            android:layout_width="30dp"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/im_diaglog_detale" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密码验证（红包）"
+            android:textColor="@color/color_333333"
+            android:textSize="18dp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/im_red_pack"
+        android:textColor="@color/color_333333"
+        android:textSize="18dp"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+
+
+
+
+
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="@color/color_333333"
+            android:layout_marginTop="5dp"
+            android:layout_centerVertical="true" />
+        <TextView
+            android:id="@+id/im_tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            android:textSize="32dp"
+            android:textStyle="bold"
+            android:textColor="@color/color_333333"
+            android:layout_centerVertical="true"
+            android:drawablePadding="10dp"
+            android:gravity="bottom"
+            android:layout_marginLeft="6dp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginLeft="18dp"
+        android:background="@color/color_E0E0E0"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="支付方式"
+            android:layout_marginLeft="18dp"
+            android:textColor="@color/color_999999"
+            android:textSize="14dp" />
+        <TextView
+            android:id="@+id/im_tv_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="余额"
+            android:textColor="@color/color_999999"
+            android:textSize="14dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_marginRight="18dp"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <com.android.im.imview.IMSeparatedEditText
+        android:id="@+id/edit_hollow"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginLeft="18dp"
+        app:borderColor="@color/color_cccccc"
+        app:corner="3dp"
+        android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        app:cursorColor="@android:color/holo_orange_light"
+        app:cursorWidth="1dp"
+        android:layout_marginBottom="25dp"
+        android:visibility="gone"
+        app:maxLength="6"
+        app:separateType="@integer/type_hollow"
+        app:textColor="@color/color_333333" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="30dp">
+        <EditText
+            android:id="@+id/edit_password"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="40dp"
+            android:layout_marginLeft="18dp"
+            android:background="@drawable/im_shape_bg_write12"
+            android:hint="请输入支付密码"
+            android:textSize="15dp"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+            android:gravity="start|center"
+            android:maxLength="12"/>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1.2"
+            android:layout_height="match_parent"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="18dp">
+            <TextView
+                android:id="@+id/im_tv_ensure"
+                android:layout_width="match_parent"
+                android:text="确定"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                android:background="@drawable/im_shape_btn_ensure"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/im_tv_ensure_1"
+                android:layout_width="match_parent"
+                android:text="确定"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@drawable/im_shape_btn_ensure_2"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

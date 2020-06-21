@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/rl_Album"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/rl_Album_li"
+                android:layout_width="67dp"
+                android:layout_height="67dp"
+                android:background="@mipmap/im_chat_photo_bg"
+                android:layout_centerInParent="true">
+                <ImageView
+                    android:id="@+id/ivAlbum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/im_chat_photo"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_Album_li"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7.5dp"
+                android:text="照片"
+                android:textSize="12dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_video"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <RelativeLayout
+                android:id="@+id/rl_video_li"
+                android:layout_width="67dp"
+                android:layout_height="67dp"
+                android:background="@mipmap/im_chat_photo_bg"
+                android:layout_centerInParent="true">
+                <ImageView
+                    android:id="@+id/ivLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/im_chat_photo_sp"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_video_li"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7.5dp"
+                android:text="@string/im_location"
+                android:textSize="12dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/im_rl_contain"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="invisible">
+            <RelativeLayout
+                android:id="@+id/rl_share"
+                android:layout_width="67dp"
+                android:layout_height="67dp"
+                android:background="@mipmap/im_chat_photo_bg"
+                android:layout_centerInParent="true">
+                <ImageView
+                    android:id="@+id/iv_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/im_chat_share"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_share"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7.5dp"
+                android:text="@string/im_share"
+                android:textSize="12dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_redpack"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="invisible">
+            <RelativeLayout
+                android:id="@+id/rl_redpack_li"
+                android:layout_width="67dp"
+                android:layout_height="67dp"
+                android:background="@mipmap/im_chat_photo_bg"
+                android:layout_centerInParent="true">
+                <ImageView
+                    android:id="@+id/ivRedPack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/im_chat_photo_hb"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_redpack_li"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7.5dp"
+                android:text="@string/im_red_pack"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8">
+    </LinearLayout>
+</LinearLayout>

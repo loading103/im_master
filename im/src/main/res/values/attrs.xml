@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SwipeMenuLayout">
+        <!--是否开启侧滑，默认开启-->
+        <attr name="isEnableSwipe" format="boolean"/>
+        <!--true后菜单放置在左边， 默认放在右边-->
+        <attr name="isEnableLeftMenu" format="boolean"/>
+        <!--是否点击菜单内容后自动关闭   默认false不关闭-->
+        <attr name="isClickMenuAndClose" format="boolean"/>
+        <!--是否开启阻塞，默认是开启的，阻塞效果是 列表中当前有一个item的菜单已经被划出，
+        想滑出第二个的时候，会先阻塞滑动的动作，把第一个先关掉，再次滑动才能划开第二个；
+        不阻塞的话 滑动第二个item的同时，第二个item划开，第一个item同时关闭-->
+        <attr name="isOpenChoke" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="IMAVLoadingIndicatorView">
+        <attr name="minWidth" format="dimension" />
+        <attr name="maxWidth" format="dimension"/>
+        <attr name="minHeight" format="dimension" />
+        <attr name="maxHeight" format="dimension"/>
+        <attr name="indicatorName" format="string"/>
+        <attr name="indicatorColor" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="RoundAngleImageView">  
+            <attr name="roundWidth" format="dimension" />  
+            <attr name="roundHeight" format="dimension" />  
+    </declare-styleable>
+
+
+
+    <declare-styleable name="SeparatedEditText">
+        <attr name="password" format="boolean" />
+        <attr name="showCursor" format="boolean" />
+        <attr name="separateType" format="reference|integer" />
+        <attr name="maxLength" format="integer" />
+        <attr name="corner" format="dimension" />
+        <attr name="borderColor" format="color|reference" />
+        <attr name="blockColor" format="color|reference" />
+        <attr name="textColor" format="color|reference" />
+        <attr name="blockSpacing" format="dimension" />
+        <attr name="cursorDuration" format="integer" />
+        <attr name="cursorWidth" format="dimension" />
+        <attr name="cursorColor" format="color|reference" />
+        <attr name="borderWidth" format="dimension" />
+    </declare-styleable>
+
+    <integer name="type_hollow">1</integer>
+    <integer name="type_solid">2</integer>
+    <integer name="type_underline">3</integer>
+
+
+    <declare-styleable name="MarqueeViewStyle">
+        <attr name="mvInterval" format="integer|reference"/>
+        <attr name="mvAnimDuration" format="integer|reference"/>
+        <attr name="mvTextSize" format="dimension|reference"/>
+        <attr name="mvTextColor" format="color|reference"/>
+        <attr name="mvSingleLine" format="boolean"/>
+        <attr name="mvFont" format="reference"/>
+        <attr name="mvGravity">
+            <enum name="left" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+        <attr name="mvDirection">
+            <enum name="bottom_to_top" value="0"/>
+            <enum name="top_to_bottom" value="1"/>
+            <enum name="right_to_left" value="2"/>
+            <enum name="left_to_right" value="3"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="SettingsOptionView">
+        <attr name="left_img" format="reference"/>
+        <attr name="text_content" format="reference|string"/>
+        <attr name="text_right" format="reference|string"/>
+        <attr name="is_Check" format="reference|boolean"/>
+        <attr name="is_show_line" format="reference|boolean"/>
+        <attr name="is_show_right_arr" format="reference|boolean"/>
+    </declare-styleable>
+</resources>

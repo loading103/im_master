@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_im_container"
+    android:layout_gravity="center_horizontal"
+    android:paddingTop="10dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_im_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/im_add_readed"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentLeft="true" />
+            <View
+                android:id="@+id/iv_im_logo_red"
+                android:layout_width="4dp"
+                android:layout_height="4dp"
+                android:background="@drawable/im_shape_red_dot"
+                android:layout_toRightOf="@+id/iv_im_logo"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_im_logo_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="2dp"
+            android:singleLine="true"
+            android:text="全部已读"
+            android:textSize="12dp"
+            android:textColor="@color/color_0BD2CF" />
+    </LinearLayout>
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_marginLeft="11dp"
+        android:background="@color/color_D1D1D1"/>
+</LinearLayout>

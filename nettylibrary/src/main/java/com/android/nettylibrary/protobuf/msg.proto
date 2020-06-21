@@ -1,0 +1,80 @@
+syntax = "proto3";//指定版本信息，不指定会报错
+
+//定义protobuf的包名称空间
+//option java_package = "com.renheng.im.protocol";
+
+// 消息体名称
+option java_outer_classname = "MessageProtobuf";
+
+
+/*聊天消息*/
+message ImMessage{
+    enum TypeEnum {
+        HEARTBEAT = 0;//心跳数据
+        INFORMATION = 1;//用于注册发送者信息到channel
+        USERMSG = 2;//用户消息
+        RECEIPT = 3;//客户端消息回执
+        POSITION = 4;//客户端位置
+        SERVERRECEIPT = 5;//服务端消息回执
+        ACK = 6;//服务端ack消息回执 客户端确认收到消息
+        KICKOUT = 7;//群被踢消息
+        PROHIBITIONS = 8;//群禁言
+        SYSTEM = 9;//系统消息
+        USERSTATUS = 10;//用户状态消息
+        READ = 11;//消息已读确认
+        TOKEN = 12;//token相关消息
+        DELETE = 13;//删除消息
+        OFFLINEEVN=14;//离线消息处理事件
+        SHIELD=15;//屏蔽消息
+    }
+
+    enum UserStatusEnum {
+        OFFLINE = 0;//离线
+        ONLINE = 1;//在线
+        BUSY = 2;//忙碌
+        SQUEEZEOUT = 3;//在其他设备登录
+        CHANGE = 4;//用户信息改变
+    }
+
+    enum ResponseStatusEnum {
+        SUCCESS = 0;//成功
+        FAIL = 1;//失败
+    }
+    
+    enum DeviceTypeEnum {
+        PC = 0;//PC端
+        IOS = 1;//IOS端
+        Android=2;//安卓
+        WAP =3;//H5端
+    }
+
+    TypeEnum type = 1;//消息类型
+
+    string clientId = 2;//公司编码
+
+    string senderId = 3;//发送者id
+
+    string receiverId = 4;//接收者id
+
+    string groupId = 5;//群id
+
+    string fingerprint = 6;//消息指纹
+
+    repeated string fingerprints = 7;//消息指纹
+
+    string data = 8;//数据
+
+    uint64 timestamp = 9;//服务端时间戳
+
+    UserStatusEnum userStatus = 10;//用户状态
+
+    string deviceId = 11;//设备id
+
+    ResponseStatusEnum responseStatus = 12;//返回状态
+
+    uint32 msgType = 13;//用户消息类型
+
+    string token = 14;//token
+
+    DeviceTypeEnum deviceType=15;// 设备类型
+}

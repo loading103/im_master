@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginBottom="11dp">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="97.5dp"
+        android:id="@+id/iv_content"
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="fitXY"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_title"
+        android:text="剑侠起源"
+        android:textSize="14sp"
+        android:textColor="@color/color_333333"
+        android:layout_marginTop="11dp"
+        android:maxLines="1"
+        android:ellipsize="end"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_content"
+        android:text="剑侠江湖之中剑侠江湖之中"
+        android:textSize="11sp"
+        android:textColor="@color/color_333333"
+        android:layout_marginTop="7.5dp"
+        android:maxLines="1"
+        android:ellipsize="end"/>
+</LinearLayout>

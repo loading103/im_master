@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:id="@+id/rl_top"
+    android:background="@drawable/im_shape_im_chat_person_bg">
+
+    <TextView
+        android:id="@+id/tv_top_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="客服"
+        android:textColor="#fff"
+        android:textSize="17dp" />
+    <ImageView
+        android:id="@+id/tv_top_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="6dp"
+        android:src="@mipmap/im_top_change_jiantou" />
+    <TextView
+        android:id="@+id/tv_top_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:text="保存"
+        android:textColor="#fff"
+        android:paddingLeft="8dp"
+        android:paddingRight="20dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:visibility="gone"
+        android:drawablePadding="10dp"
+        android:textSize="12dp" />
+    <ImageView
+        android:id="@+id/iv_top_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="8dp"
+        android:paddingRight="20dp"
+        android:visibility="gone"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:src="@mipmap/im_chat_person" />
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/ll_search"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical"
+        android:background="@drawable/im_search_bg"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <EditText
+            android:id="@+id/im_tv_serch"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="搜索群聊"
+            android:textSize="13dp"
+            android:imeOptions="actionSearch"
+            android:gravity="center|start"
+            android:background="@null"
+            android:singleLine="true"
+            android:layout_gravity="center"
+            android:textColor="@color/color_333333"
+            android:drawableLeft="@mipmap/im_conversation_serch"
+            android:drawablePadding="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="37.5dp"
+        android:text="最新浏览(最近30天)"
+        android:textSize="14sp"
+        android:textColor="@color/color_999999"
+        android:gravity="center_vertical"
+        android:paddingLeft="4.5dp"/>
+</LinearLayout>

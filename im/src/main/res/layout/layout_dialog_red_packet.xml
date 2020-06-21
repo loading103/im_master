@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="290dp"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+    <RelativeLayout
+        android:id="@+id/im_rl_contain"
+        android:layout_width="290dp"
+        android:layout_height="425dp"
+        android:background="@mipmap/red_packet_bg"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            android:scaleType="centerInside"
+            android:src="@mipmap/icon_red_packet_close" />
+        <LinearLayout
+            android:id="@+id/im_ll_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="85dp"
+            android:orientation="horizontal">
+            <com.android.im.imview.IMRoundAngleImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@mipmap/im_list_head_1"
+                android:scaleType="centerCrop"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/color_FFE3B2"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:gravity="center"
+                android:text="用户小美的红包"
+                android:textSize="17dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/im_ll_user"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="22dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="手慢了，红包派完了"
+            android:textColor="@color/color_FFE3B2"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/im_ll_user"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="75dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="恭喜发财，大吉大利"
+            android:textColor="@color/color_FFE3B2"
+            android:textSize="22dp" />
+
+        <ImageView
+            android:id="@+id/iv_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="50dp"
+            android:background="@mipmap/icon_open_red_packet1" />
+        <TextView
+            android:id="@+id/im_tv_record"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="查看领取记录 >"
+            android:textColor="#ffe3b2"
+            android:textSize="12dp"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="34dp"
+            android:layout_marginLeft="12dp" />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="21dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/im_rl_contain"
+        android:src="@mipmap/im_chat_red_cancle" />
+</RelativeLayout>
